@@ -8,7 +8,9 @@
 
 name: github action CI
 
-on: workflow_dispatch
+on:
+  push:
+    branches: [ "main" ]
 
 env:
   IMAGE_NAME: cloud-sample
